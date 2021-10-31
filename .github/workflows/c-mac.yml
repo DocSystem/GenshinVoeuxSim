@@ -23,5 +23,3 @@ jobs:
         title: "Development Build"
         files: |
           simulator-macos
-          simulator-ubuntu
-          simulator.exe
