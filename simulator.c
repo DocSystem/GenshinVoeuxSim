@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <math.h>
 #include <time.h>
+#include <locale.h>
 
 #include "wishes.h"
 #include "characters.h"
@@ -38,6 +39,9 @@ int main() {
     #else
     srand(time(NULL));
     #endif
+
+    // allow french accents
+    setlocale(LC_ALL, "");
 
     // defining variables
     int count = 0;
@@ -97,7 +101,7 @@ int main() {
                 pity4 = 0;
                 count4stars++;
             } else {
-                printf("%i. 3 stars - Pity : %i\n", count, pity5);
+                printf("%i. %s (3 stars) - Pity : %i\n", count, weapon4stars[randomInt(0, sizeof(weapon4stars) / sizeof(weapon4stars[0]) - 1)], pity5);
             }
         }
         scanf("%c", &c);

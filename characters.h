@@ -7,3 +7,5 @@ char* nonFocus4starsTmp[sizeof(all4stars) / sizeof(all4stars[0])];
 char* nonFocus4stars[sizeof(all4stars) / sizeof(all4stars[0]) - sizeof(focus4stars) / sizeof(focus4stars[0])];
 
 char* weapon4stars[] = {"Arc rouillé", "Arc rituel", "Dernière corde", "Arc de chasse de Favonius", "Oeil de la perception", "Mémoires des rituels", "Mouvement vagabon", "Code de Favonius", "Lance de Favonius", "Fléau du dragon", "Fluorescence", "Espadon rituel", "Epée-horloge", "Espadon de Favonius", "Rugissement du lion", "Epée rituel", "Flute", "Epée de Favonius"};
+
+char* weapon3stars[] = {"Lance-pierres", "Serment de l'archer", "Arc du corbeau", "Orbe jadien", "Histoire des chasseurs de dragons", "Guide de magie", "Pampille noire", "Epée de la raison", "Epée sanglante", "Ombre ferreuse", "Epée céleste", "Messager de l'aube", "Lame froide"};
