@@ -1,3 +1,5 @@
+[![C Build (Windows)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-win.yml/badge.svg)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-win.yml)[![C Build (Ubuntu)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-lin.yml/badge.svg)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-lin.yml)[![C Build (macOS)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-mac.yml/badge.svg)](https://github.com/DocSystem/GenshinVoeuxSim/actions/workflows/c-mac.yml)
+
 # Simulateur de voeux Genshin Impact
 
 ## Version C
