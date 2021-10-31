@@ -4,6 +4,7 @@
 #include <math.h>
 #include <time.h>
 #include <locale.h>
+#include <string.h>
 
 #include "wishes.h"
 #include "characters.h"
