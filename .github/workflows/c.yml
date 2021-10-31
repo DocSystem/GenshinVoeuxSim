@@ -1,4 +1,4 @@
-name: C Build (Ubuntu)
+name: C Build
 
 on:
   push:
@@ -9,12 +9,22 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        include:
+          os: macos-latest
+            run: gcc simulator.c -o simulator-macos
+          os: ubuntu-latest
+            run: gcc simulator.c -o simulator-ubuntu
+          os: windows-latest
+            run: gcc simulator.c -o simulator
 
     steps:
     - uses: actions/checkout@v2
     - name: gcc build
-      run: gcc simulator.c -o simulator-ubuntu
+      run: ${{ matrix.run }}
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -22,4 +32,6 @@ jobs:
         prerelease: true
         title: "Development Build"
         files: |
+          simulator.exe
+          simulator-macos
           simulator-ubuntu
