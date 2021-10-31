@@ -3,12 +3,12 @@
 #include<stdbool.h>
 #include<math.h>
 #include<time.h>
-int randomNumber(int min, int max) {
+int randomNumber(int max) {
     srand(time(NULL));
-    return rand() % (max + 1) + min;
+    return rand() % (max + 1);
 }
 
 int main() {
-    printf("%d", randomNumber(0,100));
+    printf("%d", randomNumber(100));
     return 0;
 }
