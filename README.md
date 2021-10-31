@@ -16,6 +16,10 @@ Il affiche aussi le pity actuel des 5 stars.
 gcc simulator.c -o simulator
 ```
 
+### Téléchargement
+
+Une version pré-compilée est disponible [ici](releases/).
+
 ## Version Python
 
 * Le fichier [simulator.py](Python/simulator.py) est la version Python du simulateur, elle fait exactement la même chose que la version C.
