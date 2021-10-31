@@ -28,7 +28,8 @@ jobs:
       run: ${{ matrix.run }}
 
   release:
-    - depends: build
+    needs: build
+    steps:
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
