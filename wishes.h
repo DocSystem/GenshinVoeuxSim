@@ -93,3 +93,20 @@ double getProba5stars(int pity) {
         default: return 100.0;
     }
 }
+
+double getProba4stars(int pity) {
+    switch (pity)
+    {
+        case 1: return 5.260053124916283;
+        case 2: return 5.224062210879182;
+        case 3: return 5.203138212155594;
+        case 4: return 5.208222076920908;
+        case 5: return 5.181413268841742;
+        case 6: return 5.198807464596605;
+        case 7: return 5.153890587724652;
+        case 8: return 5.137381109118029;
+        case 9: return 56.185091940890075;
+        case 10: return 100.0;
+        default: return 100.0;
+    }
+}
