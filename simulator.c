@@ -39,7 +39,7 @@ int main() {
     #endif
 
     // allow french accents
-    setlocale(LC_ALL, "");
+    // setlocale(LC_ALL, ""); // not working
 
     // defining variables
     int count = 0;
