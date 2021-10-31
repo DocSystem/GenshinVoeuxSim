@@ -1,9 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 #include<math.h>
-int main(){
-    while(1){
-        const int max = 2, min = 0;
-        printf("%d\n", (rand() % (max - min + 1)) + min);
-    }
+#include<time.h>
+int randomNumber(int min, int max) {
+    srand(time(NULL));
+    return rand() % (max + 1) + min;
+}
+
+int main() {
+    printf("%d", randomNumber(0,100));
+    return 0;
 }
