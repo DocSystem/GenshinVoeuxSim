@@ -28,10 +28,3 @@ void removeElementFromArray(char** array, char* element) {
     int index = getIndexOfElementInArray(array, element);
     removeIndexFromArray(array, index);
 }
-
-void copyArray(char** source, char** destination) {
-    int i;
-    for (i = 0; i < getSizeOfArray(source); i++) {
-        destination[i] = source[i];
-    }
-}
