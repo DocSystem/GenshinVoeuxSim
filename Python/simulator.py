@@ -12,7 +12,6 @@ pities4 = wishes.get_4stars()
 nonFocus5stars = ["Jean", "Diluc", "Qiqi", "Keqing", "Mona"]
 focus5stars = "Hu Tao"
 counter5stars = 0
-all5starsPities = []
 
 focus4stars = ["Thomas", "Sayu", "Diona"]
 characters4stars = ["Kujou Sara", "Sayu", "Yanfei", "Rosalia", "Xinyan", "Diona", "Sucrose", "Chongyun", "Noëlle", "Bennett", "Fischl", "Ningguang", "Xingqiu", "Beidou", "Xiangling", "Razor", "Barbara", "Thomas"]
@@ -41,7 +40,6 @@ while continuePull:
             else:
                 print("\033[93m" + str(curr) + ". " + focus5stars + " (5 stars - Garanti) - Pity : " + str(currPity5) + "\033[0m")
                 estGaranti5 = False
-            all5starsPities.append(currPity5)
             currPity5 = 0
             counter5stars += 1
         elif luck <= pities4[currPity4 - 1]["percentage"]:
