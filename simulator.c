@@ -33,7 +33,11 @@ int main() {
     copyArray(all4stars, nonFocus4starsTmp); // copy all4stars to nonFocus4starsTmp
     filterNonFocus4stars(); // remove focus4stars from all4stars and create nonFocus4stars with the remaining elements
     
+    #ifdef _WIN32
+    srand(GetTickCount());
+    #else
     srand(time(NULL));
+    #endif
 
     // defining variables
     int count = 0;
