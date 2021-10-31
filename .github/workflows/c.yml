@@ -13,7 +13,6 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, ubuntu-latest]
         include:
           - os: macos-latest
             run: gcc simulator.c -o simulator-macos
