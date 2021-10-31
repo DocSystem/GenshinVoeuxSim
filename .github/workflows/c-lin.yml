@@ -22,4 +22,6 @@ jobs:
         prerelease: true
         title: "Development Build"
         files: |
+          simulator-macos
           simulator-ubuntu
+          simulator.exe
