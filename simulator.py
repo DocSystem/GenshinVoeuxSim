@@ -1,6 +1,5 @@
 import wishes
 import random
-import signal
 
 curr = 0
 estGaranti5 = False
