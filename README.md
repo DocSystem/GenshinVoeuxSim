@@ -18,7 +18,7 @@ gcc simulator.c -o simulator
 
 ### Téléchargement
 
-Une version pré-compilée est disponible [ici](releases/).
+Une version pré-compilée est disponible [ici](https://github.com/DocSystem/GenshinVoeuxSim/releases/).
 
 ## Version Python
 
