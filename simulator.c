@@ -12,11 +12,10 @@
 void filterNonFocus4stars() {
     int i;
     int n = 0;
-    for (i = 0; i < sizeof(nonFocus4starsTmp) / sizeof(nonFocus4starsTmp[0]); i++) {
-        if (getIndexOfElementInArray(focus4stars, nonFocus4starsTmp[i]) == -1) {
-            nonFocus4stars[n] = nonFocus4starsTmp[i];
+    for (i = 0; i < sizeof(all4stars) / sizeof(all4stars[0]); i++) {
+        if (getIndexOfElementInArray(focus4stars, all4stars[i]) == -1) {
+            nonFocus4stars[n] = all4stars[i];
             n++;
-            // printf("%d. %s\n", n, nonFocus4starsTmp[i]);
         }
     }
     return;
@@ -31,7 +30,6 @@ int randomInt(int min, int max) {
 }
 
 int main() {
-    copyArray(all4stars, nonFocus4starsTmp); // copy all4stars to nonFocus4starsTmp
     filterNonFocus4stars(); // remove focus4stars from all4stars and create nonFocus4stars with the remaining elements
     
     #ifdef _WIN32
