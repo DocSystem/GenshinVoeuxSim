@@ -15,11 +15,11 @@ jobs:
       matrix:
         include:
           - os: macos-latest
-            run: gcc simulator.c -o simulator-macos
+            run: gcc simulator.c -o simulator-macos -ljson-c -lcurl
           - os: ubuntu-latest
-            run: gcc simulator.c -o simulator-ubuntu
+            run: gcc simulator.c -o simulator-ubuntu -ljson-c -lcurl
           - os: windows-latest
-            run: make.bat
+            run: gcc simulator.c -o simulator -ljson-c -lcurl
 
     steps:
     - uses: actions/checkout@v2
