@@ -31,6 +31,9 @@ int randomInt(int min, int max) {
 }
 
 int main() {
+    json_object* character_banner = parse_json_from_https_get_request("https://genshin-wishes.com/api/public/stats/CHARACTER_EVENT");
+    printf("%s\n", json_object_to_json_string(character_banner));
+
     filterNonFocus4stars(); // remove focus4stars from all4stars and create nonFocus4stars with the remaining elements
     
     #ifdef _WIN32

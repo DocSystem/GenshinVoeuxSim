@@ -1,3 +1,5 @@
+#include "request.h"
+
 double getProba5stars(int pity) {
     switch (pity)
     {

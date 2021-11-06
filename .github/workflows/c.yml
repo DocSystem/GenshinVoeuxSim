@@ -19,7 +19,7 @@ jobs:
           - os: ubuntu-latest
             run: gcc simulator.c -o simulator-ubuntu
           - os: windows-latest
-            run: gcc simulator.c -o simulator
+            run: make.bat
 
     steps:
     - uses: actions/checkout@v2
