@@ -1,5 +1,5 @@
-#include "curl/curl.h"
-#include "json-c/json.h"
+#include <curl/curl.h>
+#include <json-c/json.h>
 
 // parse json from http get request response
 json_object *parse_json_from_http_get_response(char *response) {
