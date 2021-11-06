@@ -1,9 +1,12 @@
 import json
+import requests
+
+def get_data():
+    r = requests.get("https://genshin-wishes.com/api/public/stats/CHARACTER_EVENT")
+    data = r.json()
+    return data
 
 def get_5stars():
-    with open("CHARACTER_EVENT.json") as f:
-        data = json.load(f)
-
     total = 0
 
     pities_o = data["countPerPity5Stars"]
@@ -19,9 +22,6 @@ def get_5stars():
     return pities
 
 def get_4stars():
-    with open("CHARACTER_EVENT.json") as f:
-        data = json.load(f)
-
     total = 0
 
     pities_o = data["countPerPity4Stars"]
@@ -35,6 +35,8 @@ def get_4stars():
         total -= p["count"]
     
     return pities
+
+data = get_data()
 
 if __name__ == "__main__":
     for i in get_5stars():
