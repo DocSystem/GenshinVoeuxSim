@@ -8,7 +8,7 @@ Ceci est un simulateur de voeux pour le jeu Genshin Impact.
 
 Il simule le système de voeux du jeu avec les statistiques du site [Genshin Wishes](https://www.genshin-wishes.com/).
 
-Il affiche aussi le pity actuel des 5 stars.
+Il affiche aussi la pity actuel des 5 stars.
 
 ### Compiler
 
